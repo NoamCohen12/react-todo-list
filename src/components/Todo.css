@@ -3,6 +3,23 @@
     padding: 10px;
     text-align: center;
     border: red 2px solid;
+    justify-content: space-between;
+    display: flex;
     width: 67%;
     margin-top: 10px;
+}
+
+button {
+    background-color: #c9d21d;
+    cursor: pointer;
+    border: solid;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e9f50b;
+}
+
+input {
+    width: 50%
 }
