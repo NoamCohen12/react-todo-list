@@ -13,3 +13,9 @@
     object-fit: contain;
     cursor: pointer;
 }
+
+.headerTitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #3e1d99;
+}

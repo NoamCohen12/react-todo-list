@@ -39,14 +39,26 @@ function App() {
     ))
   }
 
+  const [filter, setFilter] = useState('all')
+
+
+  const filteredTodos = todos.filter(todo => {
+    if (filter === 'active') return !todo.completed
+    if (filter === 'completed') return todo.completed
+    return true
+  })
+
   return (
     <>
       <div className={`app ${mode}`}>
         <div className="container">
           <Header mode={mode} setMode={setMode} />
           <Todo addTodo={addTodo} />
-          <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
-          <Footer />
+          <TodoList todos={filteredTodos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+          <Footer
+            setFilter={setFilter}
+            activeFilter={filter}
+          />
         </div>
       </div>
     </>

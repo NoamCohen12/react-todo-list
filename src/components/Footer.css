@@ -5,4 +5,30 @@
     text-align: center;
     border: red 2px solid;
     width: 67%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    font-size: 0.6rem;
+    opacity: 0.8;
+}
+
+.footer-item {
+    cursor: pointer;
+}
+
+.footer-item.marked {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.footer-item.marked:hover {
+    color: #173bbf;
 }
