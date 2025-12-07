@@ -17,7 +17,7 @@ function Todo({ addTodo }) {
     return (
         <div className="todo">
             <input type="text" value={todo} onChange={oneClickChange} placeholder="Create a new todo" />
-            <button onClick={oneClickAdd}>Add</button>
+            <button id="btnAdd" onClick={oneClickAdd}>Add</button>
         </div>
     )
 }

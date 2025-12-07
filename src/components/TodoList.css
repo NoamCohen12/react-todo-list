@@ -48,3 +48,11 @@
     color: white;
     font-size: 14px;
 }
+
+#x {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    margin-left: auto;
+}

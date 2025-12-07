@@ -9,14 +9,14 @@
     margin-top: 10px;
 }
 
-button {
+#btnAdd {
     background-color: #c9d21d;
     cursor: pointer;
     border: solid;
     border-radius: 5px;
 }
 
-button:hover {
+#btnAdd:hover {
     background-color: #e9f50b;
 }
 

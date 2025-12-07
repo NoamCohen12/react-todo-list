@@ -16,6 +16,10 @@ function App() {
     return data
   })
 
+  const deleteTodo = (id) => {
+    setTodos(todos.filter(todo => todo.id !== id))
+  }
+
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos))
   }, [todos])
@@ -41,7 +45,7 @@ function App() {
         <div className="container">
           <Header mode={mode} setMode={setMode} />
           <Todo addTodo={addTodo} />
-          <TodoList todos={todos} toggleTodo={toggleTodo} />
+          <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
           <Footer />
         </div>
       </div>
