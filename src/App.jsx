@@ -21,6 +21,16 @@ function App() {
     setTodos(todos.filter(todo => todo.id !== id))
   }
 
+  const editTodo = (id) => {
+    const todo = todos.find(todo => todo.id === id)
+    const newTitle = prompt('Edit todo', todo.title)
+    if (newTitle) {
+      setTodos(todos.map(todo =>
+        todo.id === id ? { ...todo, title: newTitle } : todo
+      ))
+    }
+  }
+
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos))
   }, [todos])
@@ -52,7 +62,7 @@ function App() {
         <div className="container">
           <Header mode={mode} setMode={setMode} />
           <Todo addTodo={addTodo} />
-          <TodoList todos={filteredTodos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+          <TodoList todos={filteredTodos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} editTodo={editTodo} />
           <Footer setFilter={setFilter} filter={filter} />
         </div>
       </div>

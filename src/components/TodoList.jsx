@@ -1,6 +1,6 @@
 import './TodoList.css'
 
-function TodoList({ todos, toggleTodo, deleteTodo }) {
+function TodoList({ todos, toggleTodo, deleteTodo, editTodo }) {
     return (
         <div className="todoList">
             {todos.map(todo => (
@@ -14,7 +14,10 @@ function TodoList({ todos, toggleTodo, deleteTodo }) {
                     <span className="todo-title">
                         {todo.completed ? <del>{todo.title}</del> : todo.title}
                     </span>
-                    <div id="x" onClick={() => deleteTodo(todo.id)}>❌</div>
+                    <div className="todo-actions">
+                        <div onClick={() => editTodo(todo.id)}> ✏️</div>
+                        <div onClick={() => deleteTodo(todo.id)}>❌</div>
+                    </div>
                 </div>
             ))}
         </div>

@@ -48,10 +48,17 @@
     font-size: 14px;
 }
 
-#x {
+.todo-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.todo-actions div {
     width: 20px;
     height: 20px;
     object-fit: contain;
     cursor: pointer;
-    margin-left: auto;
 }
