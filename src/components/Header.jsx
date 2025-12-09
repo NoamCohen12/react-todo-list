@@ -1,6 +1,4 @@
 import './Header.css'
-import sun from '../../public/images/sun1.png'
-import moon from '../../public/images/moon1.png'
 
 function Header({ mode, setMode }) {
     function handleClick() {
@@ -13,8 +11,11 @@ function Header({ mode, setMode }) {
                 TodoList
             </div>
             <div className="modeButton">
-                <img onClick={handleClick} src={mode === 'lightMode' ? sun : moon}
-                    alt="ImageModeIcon" />
+                <img
+                    onClick={handleClick}
+                    src={mode === 'lightMode' ? '/Images/moon.png' : '/Images/sun.png'}
+                    alt="ImageModeIcon"
+                />
             </div>
         </div>
     )
