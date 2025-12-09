@@ -3,6 +3,9 @@
 A simple and clean Todo List application built using **React** with **Vite** as the development environment.  
 The goal of the project is to practice React fundamentals such as component structure, state management, props, and dynamic rendering.
 
+🔗 Live Demo:  
+https://react-todo-list-tau-fawn.vercel.app
+
 ---
 
 ## 🖼️ Preview
