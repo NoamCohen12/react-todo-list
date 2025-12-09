@@ -7,9 +7,9 @@ The goal of the project is to practice React fundamentals such as component stru
 
 ## 🖼️ Preview
 LightMode:
-![TodoList-lightMode](./public/images/lightMode.png)
+![TodoList-LightMode](./docs/images/lightMode.png)
 DarkMode:
-![TodoList-darkMode](./public/images/darkMode.png)
+![TodoList-DarkMode](./docs/images/darkMode.png)
 ---
 
 ## ✨ Features
@@ -45,8 +45,8 @@ To view the stored data manually:
 
 
 Example view:
-![TodoList-localStorage](./public/images/localStorage.png)
 
+![TodoList-localStorage](./docs/images/localStorage.png)
 
 ## 🧱 Tech Stack
 
